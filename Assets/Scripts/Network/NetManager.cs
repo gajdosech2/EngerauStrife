@@ -7,23 +7,27 @@ public class NetManager : NetworkManager
 {
     public GameObject menu;
 
-    void SetPortAndAndress()
+    public void Host()
     {
-        NetworkManager.singleton.networkAddress = "localhost";
+        NetworkManager.singleton.networkAddress = "90.64.193.109";
         NetworkManager.singleton.networkPort = 7777;
-    }
-
-    public void HostGame()
-    {
-        SetPortAndAndress();
         NetworkManager.singleton.StartHost();
         menu.SetActive(false);
     }
 
-    public void JoinGame()
+    public void Join()
     {
-        SetPortAndAndress();
+        NetworkManager.singleton.networkAddress = "90.64.193.109";
+        NetworkManager.singleton.networkPort = 7777;
         NetworkManager.singleton.StartClient();
         menu.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Host();
+        }
     }
 }

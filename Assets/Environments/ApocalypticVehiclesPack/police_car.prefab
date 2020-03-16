@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 400002}
   - component: {fileID: 3300002}
   - component: {fileID: 2300002}
-  - component: {fileID: 6500000}
+  - component: {fileID: 1361881434}
   m_Layer: 0
   m_Name: police_car
   m_TagString: Untagged
@@ -124,9 +124,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0.0000007915711, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -84.63, y: -16.14, z: -64.49}
-  m_LocalScale: {x: 14.57076, y: 14.57076, z: 14.57076}
+  m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
@@ -177,8 +177,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6500000
-BoxCollider:
+--- !u!64 &1361881434
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -187,6 +187,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.12707198, y: 0.084226996, z: 0.25088796}
-  m_Center: {x: -8.4703295e-22, y: 0.041975126, z: 0.00000046938658}
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: dadfa73e2d58c0547bcb9f96c0001488, type: 3}
